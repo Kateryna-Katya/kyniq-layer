@@ -1,19 +1,25 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="header__logo">
+          <span class="header__logo-accent">Kyniq</span>Layer
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav">
+          <ul class="header__menu">
+              <li><a href="#hero" class="header__link">Главная</a></li>
+              <li><a href="#about" class="header__link">О платформе</a></li>
+              <li><a href="#benefits" class="header__link">Преимущества</a></li>
+              <li><a href="#innovations" class="header__link">Инновации</a></li>
+              <li><a href="#education" class="header__link">Обучение</a></li>
+              <li><a href="#blog" class="header__link">Блог</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary header__btn">Начать сейчас</a>
+          <button class="header__burger" aria-label="Menu">
+              <i data-lucide="menu"></i>
+          </button>
+      </div>
   </div>
 </header>
