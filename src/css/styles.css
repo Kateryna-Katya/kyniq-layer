@@ -949,3 +949,79 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   text-decoration: underline;
 }
+/* --- Legal Pages Styles --- */
+.pages {
+  padding-top: 140px; /* Отступ от хедера */
+  padding-bottom: 80px;
+  background-color: var(--color-bg);
+}
+
+.pages__container {
+  max-width: 800px; /* Узкая колонка для удобства чтения */
+  margin: 0 auto;
+}
+
+.pages__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 40px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+}
+
+.pages h2 {
+  font-size: 1.5rem;
+  color: var(--color-highlight); /* Неоновый циан для заголовков */
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.pages p {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.pages strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.pages ul {
+  list-style: none; /* Убираем стандартные точки */
+  margin-bottom: 30px;
+  padding-left: 0;
+}
+
+.pages li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 16px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* Кастомные буллиты для списка */
+.pages li::before {
+  content: "•";
+  color: var(--color-accent);
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+}
+
+.pages a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.pages a:hover {
+  color: var(--color-highlight);
+}
+
+.text-highlight {
+  color: #fff;
+}
